@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Lucru individual la HTML">
+        <meta name="keywords" content=" HTML">
+        <title>Seventh - Stiluri repartizare in blocuri</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+           
+            <img src="img/flowerheader.png" height="50px" alt="Flowers">
+
+        </header>
+
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="prim.html">Prim</a></li>
+                <li><a href="secund.html">Secund</a></li>
+                <li><a href="third.html">Third</a></li>
+                <li class="dropdown" id="dropdownClick2">
+                    <a class="dropButton" id="activeDrop" href="javascript:void(0);" onclick="dDropdownMenu()">Dropdown</a>
+                    <div class="dropdownContent">
+                        <img src="img/arrowUp.png">
+                        <div class="dropdownLinks">
+                        <a class="active" href="#">Five</a>
+			<a href="fourth.html">Fourth</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <div class="col-12">
+                <p><b>Film projector sound</b></p>
+                <audio controls>
+                    <source src="media/audio1.ogg" type="audio/ogg">
+                    <source src="media/audio1.mp3" type="audio/mpeg">
+                    Your browser does not support the audio tag.
+                </audio>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <video controls>
+                    <source src="media/Platinum%20Logo%20Reveal.mp4" type="video/mp4">
+                    <source src="media/Platinum_Logo_Reveal.mov" type="video/mov">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+      <div class="row">
+        <div class="col-12">
+          <progress max="100" value="68"></progress>
+          <meter max="100" value="50"></meter>
+        </div>
+      </div>
+
+                <script>
+            function dropdownMenu()
+            {
+                var x = document.getElementById("dropdownClick");
+                if(x.className === "topnav")
+                {
+                    x.className += " responsive";
+                    /* Change topnav to topnav.responsive */
+                }
+                else
+                {
+                    x.className = "topnav";
+                }
+            }
+            
+            function dDropdownMenu()
+            {
+                var y = document.getElementById("dropdownClick2");
+                var z = document.getElementById("activeDrop");
+                if(y.className === "dropdown")
+                {
+                    y.className += " responsive";
+                    z.className += " responsive";
+                }
+                else
+                {
+                    y.className = "dropdown";
+                    z.className = "dropButton";
+                }
+            }
+        </script>
+        
+    </body>
+</html>

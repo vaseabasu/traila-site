@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Lucru individual la HTML">
+        <meta name="keywords" content=" HTML">
+        <title>Fourth - Stiluri repartizare in blocuri</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <img src="img/flowerheader.png" height="50px" alt="Flowers">
+
+        </header>
+
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="prim.html">Prim</a></li>
+                <li><a href="secund.html">Secund</a></li>
+                <li><a href="third.html">Third</a></li>
+                <li class="dropdown" id="dropdownClick2">
+                    <a class="dropButton" id="activeDrop" href="javascript:void(0);" onclick="dDropdownMenu()">Dropdown</a>
+                    <div class="dropdownContent">
+                        <img src="img/arrowUp.png">
+                        <div class="dropdownLinks">
+                        <a class="active" href="#">Fourth</a>
+                        <a href="five.html">Five</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+
+        <div style="margin-top: 10px;" class="row">
+            <div class="col-12">
+                <img src="img/img1.jpg" alt="Bee" title="Bee" width="300">
+                <img src="img/img2.jpg" alt="Sea" title="Sea" width="300">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <img style="margin-top: 10px;" src="img/img3.jpg" alt="Goat" title="goat" width="500" border="5">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <table class="imgTable" style="width: 95%; border-collapse: collapse; margin: auto; margin-top: 5px; margin-bottom: 15px;" border="1" cellpadding="2">
+                    <tr>
+                        <th colspan="5">Date despre copiii colaboratorilor</th>
+                    </tr>
+                    <tr>
+                        <th width="25%">Nume, prenume</th>
+                        <th width="25%">Adresa fizica</th>
+                        <th width="12.5%">Numar copii minori in intretinere</th>
+                        <th width="12.5%">Prenume copii si anul de naster</th>
+                        <th width="25%">Poza copii</th>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;" valign="top" rowspan="2">Ivanov Elena</td>
+                        <td style="text-align: left;" valign="top" rowspan="2">str. Codrilor 45, ap 56</td>
+                        <td rowspan="2" valign="top">2</td>
+                        <td style="text-align: left;" valign="top">Elena,2006</td>
+                        <td><a href="#elena"><img src="img/child1.jpg" alt="Child1" title="Elena" width="170"></a></td>
+                        
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;" valign="top">Valeriu,2011</td>
+                        <td><a href="#valeriu"><img src="img/child2.jpg" alt="Child2" title="Valeriu" width="170"></a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Ciugureanu Ion</td>
+                        <td style="text-align: left;">str. Saptefrati 12, ap.1</td>
+                        <td>0</td>
+                        <td style="text-align: left;">-</td>
+                        <td style="text-align: left;">-</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;" valign="top" rowspan="3">Mihailov Marta</td>
+                        <td style="text-align: left;" valign="top" rowspan="3">str. Puskin 10, ap.45</td>
+                        <td rowspan="3" valign="top">3</td>
+                        <td style="text-align: left;" valign="top">Ion, 2008</td>
+                        <td><a href="#ion"><img src="img/child3.jpg" alt="Child1" title="Ion" width="170"></a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;" valign="top">Ecaterina, 2010</td>
+                        <td><a href="#ecaterina"><img src="img/child4.jpg" alt="Child4" title="Ecaterina" width="170"></a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;" valign="top">Valentin, 2011</td>
+                        <td><a href="#valentin"><img src="img/child5.jpg" alt="Child5" title="Valentin" width="170"></a></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;" valign="top">Cliucnicov Magdalena</td>
+                        <td style="text-align: left;" valign="top">str. Nucilor 34, ap.22</td>
+                        <td valign="top">1</td>
+                        <td style="text-align: left;" valign="top">Mariuta, 2012</td>
+                        <td><a href="#mariuta"><img src="img/child6.jpg" alt="Child6" title="Mariuta" width="170"></a></td>
+                    </tr>
+                    <tr style="text-align: left;">
+                        <th colspan="2">Total numar copii</th>
+                        <td colspan="3">6</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div class="childrenInfo">
+                <a id="elena"><h3>Elena</h3></a>
+                <p>Studii: Gradinita.
+                <br>Hobby: Desen
+                <br>Jucarii preferate: papusi.</p>
+                <a id="valeriu"><h3>Valeriu</h3></a>
+                <p>Studii: Gradinita.
+                <br>Hobby: Sport
+                <br>Jucarii preferate: masini.</p>
+                <a id="ion"><h3>Ion</h3></a>
+                <p>Studii: Gradinita.
+                <br>Hobby: Muzica
+                <br>Jucarii preferate: masini.</p>
+                <a id="ecaterina"><h3>Ecaterina</h3></a>
+                <p>Studii: Gradinita.
+                <br>Hobby: Desen
+                <br>Jucarii preferate: papusi.</p>
+                <a id="valentin"><h3>Valentin</h3></a>
+                <p>Studii: Gradinita.
+                <br>Hobby: Sport
+                <br>Jucarii preferate: soldati.</p>
+                <a id="mariuta"><h3>Mariuta</h3></a>
+                <p>Studii: Gradinita.
+                <br>Hobby: Muzica
+                <br>Jucarii preferate: papusi.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <img class="solarSystem" src="img/solar-system.jpg" width="" alt="Planets" usemap="#planetmap">
+            <map name="planetmap">
+                <area shape="circle" coords="696, 228, 7" href="https://en.wikipedia.org/wiki/Pluto" target="_blank" alt="Pluto" />
+                <area shape="circle" coords="651, 230, 25" href="https://en.wikipedia.org/wiki/Neptune" target="_blank" alt="Neptune" />
+                <area shape="circle" coords="581, 230, 28" href="https://en.wikipedia.org/wiki/Uranus" target="_blank" alt="Uranus" />
+                <area shape="circle" coords="512, 230, 26" href="https://en.wikipedia.org/wiki/Saturn" target="_blank" alt="Saturn" />
+                <area shape="circle" coords="429, 230, 40" href="https://en.wikipedia.org/wiki/Jupiter" target="_blank" alt="Jupiter" />
+                <area shape="circle" coords="348, 229, 21" href="https://en.wikipedia.org/wiki/Mars" target="_blank" alt="Mars" />
+                
+                <area shape="circle" coords="259, 230, 26" href="https://en.wikipedia.org/wiki/Earth" target="_blank" alt="Earth" />
+                <area shape="circle" coords="187, 230, 32" href="https://en.wikipedia.org/wiki/Venus" target="_blank" alt="Venus" />
+                <area shape="circle" coords="127, 229, 13" href="https://en.wikipedia.org/wiki/Mercury_(planet)" target="_blank" alt="Mercury" />
+                <area shape="circle" coords="36, 228, 61" href="https://en.wikipedia.org/wiki/Sun" target="_blank" alt="Sun" />
+            </map>
+        </div>
+
+       
+                
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Lucru individual la HTML">
+        <meta name="keywords" content=" HTML, CSS">
+        <meta name="author" content="Traila Daniel">
+        <title>Stiluri repartizare in blocuri</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            
+            <img src="img/flowerheader.png" height="50px" alt="Flowers">
+        </header>
+
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a class="active" href="#">Index</a></li>
+                <li><a href="prim.html">Prim</a></li>
+                <li><a href="secund.html">Secund</a></li>
+                <li><a href="third.html">Third</a></li>
+                <li class="dropdown" id="dropdownClick2">
+                    <a class="dropButton" id="activeDrop" href="javascript:void(0);" onclick="dDropdownMenu()">Dropdown</a>
+                    <div class="dropdownContent">
+                        <img src="img/arrowUp.png">
+                        <div class="dropdownLinks">
+                        <a href="fourth.html">Fourth</a>
+                        <a href="five.html">Five</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+
+        <div class="internMenu">
+            <p><b>Cuprins:</b></p>
+            <ul type="circle">
+                <li><a href="#cap1">Capitolul 1</a></li>
+                <li><a href="#cap2">Capitolul 2</a></li>
+                <li><a href="#cap3">Capitolul 3</a></li>
+            </ul>
+        </div>
+
+        <hr>
+
+        <div class="indexHeaders">
+            <a id="cap1"><h1>Capitolul 1</h1></a>
+            <h2>1.1. Matematica</h2>
+            <h3>
+                1.1.1. Spatii<br>
+                1.1.2. Grupuri si inele<br>
+                1.1.3. Morfisme si izomorfisme
+            </h3>
+            <h2>1.2. Informatica</h2>
+            <h3>
+                1.2.1. Fundamentele programarii<br>
+                1.2.2. Limbaje de asamblare<br>
+                1.2.3. <abbr title="Hyper Text Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> si JavaScript
+            </h3>
+            <a id="cap2"><h1>Capitolul 2</h1></a>
+            <h2>2.1. Matematica</h2>
+            <h3>
+                2.1.1. Spatii<br>
+                2.1.2. Grupuri si inele<br>
+                2.1.3. Morfisme si izomorfisme
+            </h3>
+            <h2>2.2. Informatica</h2>
+            <h3>
+                2.2.1. Fundamentele programarii<br>
+                2.2.2. Limbaje de asamblare<br>
+                2.2.3. <abbr title="Hyper Text Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> si JavaScript
+            </h3>
+            <a id="cap3"><h1>Capitolul 3</h1></a>
+            <h2>3.1. Matematica</h2>
+            <h3>
+                3.1.1. Spatii<br>
+                3.1.2. Grupuri si inele<br>
+                3.1.3. Morfisme si izomorfisme
+            </h3>
+            <h2>3.2. Informatica</h2>
+            <h3>
+                3.2.1. Fundamentele programarii<br>
+                3.2.2. Limbaje de asamblare<br>
+                3.2.3. <abbr title="Hyper Text Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr> si JavaScript
+            </h3>
+        </div>
+        <hr>
+        <p><b>Lumina</b> ce-o simt<br>năvălindu-mi în <i>piept</i> când te vad,<br>oare nu e un <del>strop</del> din lumina<br><ins>creată</ins> în ziua dintâi,<br><mark>din lumina</mark> aceea-nsetată adânc de viaţă?</p>
+        <pre>Nimicul zăcea-n agonie 
+când singur plutea-ntuneric şi dat-a 
+un semn Nepătrunsul: 
+"Să fie lumină!"</pre>
+        <hr>
+        <blockquote>If I won the award for laziness, I would send somebody to pick it up for me.</blockquote>
+        <hr>
+        <q>If I won the award for laziness, I would send somebody to pick it up for me.</q>
+        <hr>
+        <cite>If I won the award for laziness, I would send somebody to pick it up for me.</cite>
+        <hr>
+        <p>x<sup>2</sup>+n<sub>a</sub>=0</p>
+
+        
+               
+    </body>
+</html>

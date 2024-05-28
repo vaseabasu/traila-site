@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Lucru individual la HTML">
+        <meta name="keywords" content=" HTML">
+        <title>Third - Stiluri repartizare in blocuri</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+                      <img src="img/flowerheader.png" height="50px" alt="Flowers">
+
+        </header>
+
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="prim.html">Prim</a></li>
+                <li><a href="secund.html">Secund</a></li>
+                <li><a class="active" href="#">Third</a></li>
+                <li class="dropdown" id="dropdownClick2">
+                    <a class="dropButton" id="activeDrop" href="javascript:void(0);" onclick="dDropdownMenu()">Dropdown</a>
+                    <div class="dropdownContent">
+                        <img src="img/arrowUp.png">
+                        <div class="dropdownLinks">
+                        <a href="fourth.html">Fourth</a>
+                        <a href="five.html">Five</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <div class="col-6">
+                <ol>
+                    <li style="font-size: 20px;"><b>USM</b></li>
+                    <dl style="margin: 0px;">
+                        <dt><b>Universitatea de Stat din Moldova</b></dt>
+                        <dd>Una din principalele instituții de învățământ superior din Republica Moldova, care își are sediul în Chișinău.</dd>
+                    </dl>
+                    <ul>
+                        <li>Facultatea Matematica si Informatica</li>
+                        <ul type="square">
+                            <li>Matematica</li>
+                            <li>Matematica Aplicata</li>
+                            <li>Informatica</li>
+                            <li>Informatica Aplicata</li>
+                            <li>Management Informational</li>
+                        </ul>
+                        <li>Facultatea de Chimie şi Tehnologie Chimică</li>
+                        <ul type="square">
+                            <li>Chimie</li>
+                            <li>Chimie biofarmaceutica</li>
+                            <li>Tehnologii chimice industriale</li>
+                            <li>Tehnologia produselor cosmetice si medicinale</li>
+                        </ul>
+                        <dl style="margin: 0px;">
+                            <dt><b>Durata de studii</b></dt>
+                            <dd>3 ani</dd>
+                        </dl>
+                    </ul>
+                    <li style="font-size: 20px;"><b>UTM</b></li>
+                    <dl style="margin: 0px;">
+                        <dt><b>Universitatea Tehnica din Moldova</b></dt>
+                        <dd>O instituție de învățămant superior tehnic din Chișinău, Republica Moldova și este unica de acest profil acreditată de stat.</dd>
+                    </dl>
+                    <ul>
+                        <li>Facultatea Urbanism si Arhitectura</li>
+                        <ul type="square">
+                            <li>Arhitectura</li>
+                            <li>Management in Constructii</li>
+                            <li>Sculptura</li>
+                            <li>Design interior</li>
+                        </ul>
+                        <li>Facultatea de Chimie şi Tehnologie Chimică</li>
+                        <ul type="square">
+                            <li>Chimie</li>
+                            <li>Chimie biofarmaceutica</li>
+                            <li>Tehnologii chimice industriale</li>
+                            <li>Tehnologia produselor cosmetice si medicinale</li>
+                        </ul>
+                        <dl style="margin: 0px;">
+                            <dt><b>Durata de studii</b></dt>
+                            <dd>3-6 ani</dd>
+                        </dl>
+                    </ul>
+                </ol>
+            </div>
+            <div class="col-6">
+                <table class="otherTable" style="width: 95%; border-collapse: collapse; margin: auto; margin-top: 15px; margin-bottom: 15px; height: 400px;" border="0" cellpadding="10">
+                    <tr>
+                        <td bgcolor="#1a1a1a" colspan="10"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#404040" rowspan="8"></td>
+                        <td bgcolor="#4d4d4d" colspan="8"></td>
+                        <td bgcolor="#262626" rowspan="9"></td>
+                    <tr>
+                        <td bgcolor="#737373" rowspan="6"></td>
+                        <td bgcolor="#7f7f7f" colspan="6"></td>
+                        <td bgcolor="#595959" rowspan="7"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#a6a6a6" rowspan="4"></td>
+                        <td bgcolor="#b3b3b3" colspan="4"></td>
+                        <td bgcolor="#8c8c8c" rowspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#d9d9d9" rowspan="2"></td>
+                        <td bgcolor="e6e6e6" colspan="2"></td>
+                        <td bgcolor="#bfbfbf" rowspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="ffffff"></td>
+                        <td bgcolor="f2f2f2"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#cccccc" colspan="3"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#999999" colspan="5"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#666666" colspan="7"></td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#333333" colspan="9"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <hr>
+        <table style="width: 95%; border-collapse: collapse; margin: auto; margin-top: 15px; margin-bottom: 15px;" border="1">
+            <tr>
+                <th colspan="6">Orarul de activitate a angajatilor nostri</th>
+            </tr>
+            <tr>
+                <th>Nume, prenume | Zi saptamana</th>
+                <th>Luni</th>
+                <th>Marti</th>
+                <th>Miercuri</th>
+                <th>Joi</th>
+                <th>Vineri</th>
+            </tr>
+            <tr>
+                <td>Ivanova Elena</td>
+                <td>8:00-12:00</td>
+                <td>12:00 - 16:00</td>
+                <td>8:00-12:00</td>
+                <td>12:00 - 16:00</td>
+                <td>8:00-12:00</td>
+            </tr>
+            <tr>
+                <td>Mereacre Maria</td>
+                <td>12:00 - 16:00</td>
+                <td>8:00-12:00</td>
+                <td>12:00 - 16:00</td>
+                <td>8:00-12:00</td>
+                <td>12:00 - 16:00</td>
+            </tr>
+        </table>
+        <hr>
+        <table style="text-align: center; width: 95%; border-collapse: collapse; margin: auto; margin-top: 15px; margin-bottom: 15px;" border="1" cellpadding="10">
+            <tr>
+                <th colspan="7">Repartizarea orelor pentru acest semestru</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Semestru</th>
+                <th colspan="4">Total ore</th>
+                <th rowspan="3">Evaluarea</th>
+                <th rowspan="3">Nr. de credite</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Total ore</td>
+                <td colspan="3">Inclusiv</td>
+            </tr>
+            <tr>
+                <td>Curs</td>
+                <td>Laborator</td>
+                <td>LI</td>
+            </tr>
+            <tr>
+                <td>II</td>
+                <td>150</td>
+                <td>30</td>
+                <td>45</td>
+                <td>75</td>
+                <td>Examen</td>
+                <td>5</td>
+            </tr>
+        </table>
+
+       
+               
+    </body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Lucru individual la HTML">
+        <meta name="keywords" content=" HTML">
+        <title>Prim - Stiluri repartizare in blocuri</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            
+            <img src="img/flowerheader.png" height="50px" alt="Flowers">
+
+        </header>
+
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html">Index</a></li>
+                <li><a class="active" href="#">Prim</a></li>
+                <li><a href="secund.html">Secund</a></li>
+                <li><a href="third.html">Third</a></li>
+                <li class="dropdown" id="dropdownClick2">
+                    <a class="dropButton" id="activeDrop" href="javascript:void(0);" onclick="dDropdownMenu()">Dropdown</a>
+                    <div class="dropdownContent">
+                        <img src="img/arrowUp.png">
+                        <div class="dropdownLinks">
+                        <a href="fourth.html">Fourth</a>
+                        <a href="five.html">Five</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <div class="col-6">
+                <h3>Col 1 (50%)</h3>
+                <img src="img/parrot.JPG">
+                <p>Hey there! I'm a birb.</p>
+            </div>
+            <div class="col-3">
+                <h3>Col 2 (25%)</h3>
+                <p>If I won the award for laziness, I would send somebody to pick it up for me.</p>
+                <a href="index.html" target="_blank">Open index in a new tab.</a><br>
+                <hr>
+                <dl>
+                    <dt>HTML</dt>
+                    <dd>Este un limbaj de marcare utilizat pentru crearea paginilor web ce pot fi afișate într-un browser</dd>
+                    <dt>CSS</dt>
+                    <dd>Este un standard pentru formatarea elementelor unui document HTML</dd>
+                    <dt>Javascript</dt>
+                    <dd>JavaScript (JS) este un limbaj de programare orientat obiect bazat pe conceptul prototipurilor.</dd>
+                </dl>
+            </div>
+            <div class="col-3">
+                <h3>Col 3 (25%)</h3>
+                <ol start="4" type="a" reversed>
+                    <li>Primul Element</li>
+                    <li>Al doilea element</li>
+                    <li>Al treilea element</li>
+                    <li>Al patrulea element</li>
+                    <li>Al cincilea element</li>
+                </ol>
+                <ol start="3" type="I" reversed>
+                    <li>Primul Element</li>
+                    <li>Al doilea element</li>
+                    <li>Al treilea element</li>
+                    <li>Al patrulea element</li>
+                </ol>
+                <ul type="square">
+                    <li>Primul Element</li>
+                    <li>Al doilea element</li>
+                    <li>Al treilea element</li>
+                </ul>
+            </div>
+        </div>
+
+        
+                
+    </body>
+</html>

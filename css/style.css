@@ -1,0 +1,522 @@
+body {
+    background-color: #d9d9d9;
+    margin: 0;
+}
+
+header,nav,footer {
+    display: block;
+}
+
+h1,h2,h3,p,pre,q,cite {
+    margin: 10px;
+}
+
+mark {
+    background-color: grey;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover {
+    color: #4caf50;
+}
+
+a:active {
+    color: #008000;
+}
+
+/***** Header Styling *****/
+header a {
+    display: inline-block;
+}
+
+header a h1 {
+    margin: 10px;
+}
+
+header a h1 b {
+    color: #4caf50;
+}
+
+header img {
+    float: right;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+/***** Navbar Styling *****/
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #8c8c8c;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    font-size: 20px;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #000;
+    transition-duration: 0.3s;
+}
+
+ul.topnav li a:hover {
+    background-color: #595959;
+}
+
+ul.topnav li a:active {
+    background-color: #333333;
+    color: #fff;
+    transition-duration: 0.2s;
+}
+
+ul.topnav li a.active {
+    background-color: #595959;
+    cursor: default;
+}
+
+ul.topnav li a.active:active {
+    color: #000;
+}
+
+/* Dropdown */
+
+ul.topnav .dropdownContent {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    min-width: 144px;
+    transform: translateY(3em);
+    transition: all 0.25s ease-in-out 0s, visibility 0s linear 0.25s, z-index 0s linear 0.01s;
+}
+
+ul.topnav .dropdownContent img {
+    margin: auto;
+    display: block;
+}
+
+ul.topnav .dropdownContent .dropdownLinks {
+    background-color: #8c8c8c;
+}
+
+ul.topnav li.dropdown:hover .dropdownContent {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0%);
+    transition-delay: 0s, 0s, 0.3s;
+}
+
+/* Responsive */
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+ul.topnav li.dropdownIcon a:: {
+    font-size: 17px;
+}
+
+/***** Footer Styling *****/
+footer {
+    background: linear-gradient(#4d4d4d, #8c8c8c);
+    text-align: right;
+    padding: 10px;
+}
+
+footer .row .col-5 ul {
+    display: block;
+    margin: 10px;
+    padding: 0;
+    margin-left: 20px;
+    margin-top: 27px
+}
+
+footer .row .col-5 p {
+    text-align-last: left;
+    margin-left: 20px
+}
+
+footer .row .col-5 ul.botnav li {
+    list-style: none;
+    display: inline-block;
+}
+
+footer .row .col-5 ul.botnav li a {
+    margin: 3px;
+    text-transform: uppercase;
+    font-weight: 550;
+}
+
+footer .row .col-2 img {
+    display: block;
+    height: 60px;
+    margin: 20px auto;
+}
+
+footer address {
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+/***** Rows & Cols *****/
+.row {
+    display: flex;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/***** Index Styling *****/
+.indexHeaders h2 {
+    margin-left: 20px;
+}
+
+.indexHeaders h3 {
+    margin-left: 40px;
+}
+
+.internMenu ul {
+    padding: 0px 0px 0px 25px;
+    margin: 0px;
+}
+
+.internMenu p {
+    font-size: 20px;
+    margin: 5px 10px;
+}
+
+[id*="cap"]:hover {
+    color: #000;
+}
+
+/***** Prim Styling *****/
+.row .col-6 img {
+    max-width: 50%;
+    margin: auto;
+    display: block;
+}
+
+.row .col-6 {
+    text-align: center;
+}
+
+.row .col-3 {
+    text-align: center;
+}
+
+.row .col-3 a {
+    text-decoration: underline;
+}
+
+.row .col-3 ol,ul,dl {
+    text-align: left;
+    margin: 10px 0px;
+}
+
+/***** Secund Styling *****/
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.col-9 {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.col-6 ol {
+    text-align: left;
+    margin: 15px;
+}
+
+.col-6 ol ul,dl {
+    margin: 0px;
+}
+
+form input {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    transition-duration: 0.3s;
+}
+
+form input:focus {
+    box-shadow: 0px 0px 10px #4caf50;
+    outline: none;
+}
+
+form button {
+    border: none;
+    color: #000;
+    background-color: transparent;
+    padding: 16px 62px;
+    font-size: 16px;
+    margin: 10px 0px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid #4caf50;
+    text-transform: uppercase;
+    max-width: 100%;
+    font-weight: 600;
+    outline: none;
+}
+
+form button:hover {
+    background-color: #4caf50;
+    color: #fff;
+    box-shadow: 0px 0px 10px grey;
+}
+
+form button:active {
+    background-color: #367c39;
+}
+
+/***** Third Styling *****/
+table:not(.otherTable) td:hover, th:hover {
+    background-color: #cccccc;
+}
+
+/***** Fourth Styling *****/
+.row .col-12 {
+    text-align: center;
+}
+
+.row .col-12 img {
+    display: inline-block;
+    margin: auto;
+}
+
+.row .col-12 table.imgTable td {
+    padding-left: 5px;
+}
+
+.row .solarSystem {
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.childrenInfo a:hover {
+    color: #000000;
+}
+
+/***** Fifth Styling *****/
+form {
+    display: block;
+    margin: auto;
+}
+
+form fieldset {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px grey;
+    border: none;
+}
+
+form fieldset legend {
+    font-weight: 550;
+    background-color: #d9d9d9;
+}
+
+.row form fieldset.fs1 input:not(.gen) {
+    float: right;
+    outline: none;
+}
+
+.genBlock {
+    float: right;
+}
+
+.domAddress {
+    display: inline-block;
+    padding-left: 75px;
+}
+
+.radio1 {
+    padding-left: 215px;
+}
+
+.dateInput {
+    width: 168px;
+    height: 17px;
+}
+
+form fieldset p {
+    margin: 0px;
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+}
+
+.row form.googleSearch {
+    margin: 0px auto 20px;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0px 0px 10px #4caf50;
+    transition-duration: 0.2s;
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: seagreen;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px black;
+    padding: 5px 10px;
+    color: white;
+    font-size: 14px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: darkgreen;
+}
+
+/***** Sixth Styling *****/
+form fieldset.fs2 input[type="text"], input[type="email"], input[type="date"], input[type="submit"] {
+    float: right;
+    outline: none;
+}
+
+form fieldset.fs2 {
+    text-align: left;
+    padding: 20px;
+}
+
+.col-6.contactUs {
+    display: flex;
+}
+
+/***** Seventh Styling *****/
+.row .col-12 video {
+    width: 70%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/***** Mobile Styling *****/
+@media screen and (max-width: 680px)
+{
+    ul.topnav li:not(:nth-child(1))
+    {
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon
+    {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        background-color: #333333;
+        top: 57px;
+        right: 0;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon a {
+        color: #fff;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon a:hover {
+        background-color: #1a1a1a;
+    }
+    
+/*  -----------  */
+    ul.topnav.responsive li.dropdown .dropdownContent img {
+        display: none;
+    }
+    
+    ul.topnav.responsive li.dropdown a.responsive {
+        background-color: #333333;
+        color: #fff;
+    }
+    
+    ul.topnav.responsive li.dropdown .dropdownContent {
+        width: 100%;
+        visibility: visible;
+        display: none;
+        opacity: 1;
+        position: relative;
+        transform: translateY(0em);
+    }
+    
+    ul.topnav.responsive li.dropdown .dropdownContent a {
+        padding-left: 30px;
+        background-color: #8c8c8c;
+    }
+    
+    ul.topnav.responsive li.dropdown .dropdownContent a:hover {
+        background-color: #595959;
+    }
+    
+    ul.topnav.responsive li.dropdown.responsive .dropdownContent {
+        width: 100%;
+        display: block;
+        opacity: 1;
+        position: relative;
+        transform: translateY(0em);
+    }
+    
+    .row.contactUs {
+        display: block;
+        margin: auto;
+    }
+    
+    .row .col-6.companyMap, .col-6.contactUs {
+        width: 100%;
+        margin: 0;
+    }
+}

@@ -1,0 +1,26 @@
+body {
+    padding: 10px;
+    text-align: center;
+}
+
+.block {
+    display: inline-block;
+    width: 192px;
+    height: 192px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 3px 3px 3px #999;
+}
+
+.block.block3 {
+    background-color: #e74c3c;
+    background-image: url(../img/smallPNG.png);
+    background-repeat: repeat-y;
+}
+
+.block.block4 {
+    background-color: #e67e22;
+    background-image: url(../img/medPNG.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+}

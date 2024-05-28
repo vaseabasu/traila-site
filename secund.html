@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ro">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Lucru individual la HTML">
+        <meta name="keywords" content=" HTML">
+               <link rel="shortcut icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+           <img src="img/flowerheader.png" height="50px" alt="Flowers">
+
+        </header>
+
+        <nav>
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="index.html">Index</a></li>
+                <li><a href="prim.html">Prim</a></li>
+                <li><a class="active" href="#">Secund</a></li>
+                <li><a href="third.html">Third</a></li>
+                <li class="dropdown" id="dropdownClick2">
+                    <a class="dropButton" id="activeDrop" href="javascript:void(0);" onclick="dDropdownMenu()">Dropdown</a>
+                    <div class="dropdownContent">
+                        <img src="img/arrowUp.png">
+                        <div class="dropdownLinks">
+                        <a href="fourth.html">Fourth</a>
+                        <a href="seventh.html">Seventh</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+            </ul>
+        </nav>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="col-9">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-RmUADCWI4A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <ol start="5">
+                    <li>Cerere</li>
+                    <li>Pasaportul</li>
+                    <ul type="square">
+                        <li>In original</li>
+                        <li>Copia actului</li>
+                    </ul>
+                    <li>Diploma de bacalaureat</li>
+                    <li>Suplimentar ar fi bine sa prezentati:</li>
+                    <ul type="square">
+                        <li>O mapa din plastic</li>
+                        <dl>
+                            <dt><b>Mapa din plastic</b></dt>
+                            <dd>Este un obiect de birou facut din carton, in care sa poata fi tinute hartii, acte etc.</dd>
+                        </dl>
+                        <li>5 file-uri</li>
+                        <dl>
+                            <dt><b>File-ul</b></dt>
+                            <dd>Este un obiect din plastic, transparent, in care pot fi pastrate foi, acte etc.</dd>
+                        </dl>
+                    </ul>
+                </ol>
+                <hr>
+                <form>
+                    <p>Name</p>
+                    <input type="text"><br>
+                    <p>Email</p>
+                    <input type="text"><br>
+                    <button>Send</button>
+                </form>
+            </div>
+        </div>
+
+        
+        <script>
+            function dropdownMenu()
+            {
+                var x = document.getElementById("dropdownClick");
+                if(x.className === "topnav")
+                {
+                    x.className += " responsive";
+                    /* Change topnav to topnav.responsive */
+                }
+                else
+                {
+                    x.className = "topnav";
+                }
+            }
+            
+            function dDropdownMenu()
+            {
+                var y = document.getElementById("dropdownClick2");
+                var z = document.getElementById("activeDrop");
+                if(y.className === "dropdown")
+                {
+                    y.className += " responsive";
+                    z.className += " responsive";
+                }
+                else
+                {
+                    y.className = "dropdown";
+                    z.className = "dropButton";
+                }
+            }
+        </script>
+        
+    </body>
+</html>
